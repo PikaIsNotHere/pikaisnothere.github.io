@@ -4,6 +4,8 @@ const body = document.querySelector("body");
 
 let RN = Math.floor(Math.random() * 5) + 1;
 
+let RNS = Math.floor(Math.random() * 5) + 1;
+
 let W;
 let M;
 let A;
