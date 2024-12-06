@@ -1,4 +1,4 @@
-const header = document.querySelector(".h1");
+const header = document.querySelector(".head");
 
 const body = document.querySelector(".body");
 
