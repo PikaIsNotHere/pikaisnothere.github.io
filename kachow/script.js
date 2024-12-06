@@ -12,6 +12,12 @@ let A;
 let Al;
 let P5;
 
+function tstrat() {
+    console.log(RN);
+    header.textContent = "tstrat";
+    body.textContent = "tbodytest";
+}
+
 function ctstrat() {
     console.log(RN);
     header.textContent = "Test";
@@ -24,10 +30,4 @@ function ctstrat() {
         header.textContent = "else";
         body.textContent = "elseD";
     }
-}
-
-function tstrat() {
-    console.log(RN);
-    header.textContent = "tstrat";
-    body.textContent = "tbodytest";
 }
