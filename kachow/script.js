@@ -23,7 +23,7 @@ function ctstrat() {
     header.textContent = "Test";
     body.textContent = "anotha test";
 
-    if (1 = RNS) {
+    if (1 === RNS) {
         header.textContent = "Strat1";
         body.textContent = "Description1";
     } else {
