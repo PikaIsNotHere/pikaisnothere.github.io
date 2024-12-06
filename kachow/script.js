@@ -1,7 +1,3 @@
-var header = document.querySelector(".head");
-
-var body = document.querySelector(".body");
-
 var RN = Math.floor(Math.random() * 5) + 1;
 
 var RNS = Math.floor(Math.random() * 5) + 1;
@@ -13,12 +9,16 @@ var Al;
 var P5;
 
 function tstrat() {
+    const header = document.querySelector(".head");
+    const body = document.querySelector(".body");
     console.log(RN);
     header.textContent = "tstrat";
     body.textContent = "tbodytest";
 }
 
 function ctstrat() {
+    const header = document.querySelector(".head");
+    const body = document.querySelector(".body");
     console.log(RN);
     header.textContent = "Test";
     body.textContent = "anotha test";
