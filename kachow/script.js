@@ -16,6 +16,14 @@ function ctstrat() {
     console.log(RN);
     header.textContent = "Test";
     body.textContent = "anotha test";
+
+    if (1 = RNS) {
+        header.textContent = "Strat1";
+        body.textContent = "Description1";
+    } else {
+        header.textContent = "else"
+        body.textContent = "elseD";
+    }
 }
 
 function tstrat() {
