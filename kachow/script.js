@@ -21,7 +21,7 @@ function ctstrat() {
         header.textContent = "Strat1";
         body.textContent = "Description1";
     } else {
-        header.textContent = "else"
+        header.textContent = "else";
         body.textContent = "elseD";
     }
 }
