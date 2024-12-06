@@ -1,6 +1,6 @@
-const header = document.querySelector("h1");
+const header = document.querySelector(".h1");
 
-const body = document.querySelector("body");
+const body = document.querySelector(".body");
 
 let RN = Math.floor(Math.random() * 5) + 1;
 
