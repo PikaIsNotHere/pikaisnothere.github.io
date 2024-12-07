@@ -12,7 +12,7 @@ function ctstrat() {
     const header = document.querySelector(".head");
     const body = document.querySelector(".body");
     
-    let players = [Ar, Al, W, M, B]
+    let players = [Ar, Al, W, M, B];
     
     players.sort(() => Math.random() - 0.5);
     
