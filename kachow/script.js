@@ -14,7 +14,17 @@ function ctstrat() {
     
     let players = [Ar, Al, W, M, B]
     
-    let RNS = Math.floor(Math.random() * 5) + 1;
+    players.sort(() => Math.random() - 0.5);
+    
+    let P1 = players[0];
+    let P2 = players[1];
+    let P3 = players[2];
+    let P4 = players[3];
+    let P5 = players[4];
+    
+    
+    
+    let RNS = Math.floor(Math.random() * 6) + 1;
 
     if (1 === RNS) {
         header.textContent = "Make me a sandwich woman!";
@@ -33,17 +43,6 @@ function ctstrat() {
         body.textContent = "Arriry must attempt to stop ${P5} from jumping out of the nearest window. If Arriry fails, during the next round Arriry must buy $(P5) whatever they want.";
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
