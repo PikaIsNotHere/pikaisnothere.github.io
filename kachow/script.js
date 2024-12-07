@@ -24,16 +24,33 @@ function ctstrat() {
         header.textContent = "Make me a sandwich woman!";
         body.textContent = "All women must stop playing, go to the kitchen, make a sandwich, show it to stream. You may not continue playing until you have showed it to stream.";
     } else if ( 2 === RNS) {
-        header.textContent = "else";
-        body.textContent = "elseD";
+        header.textContent = "37%";
+        body.textContent = "All callouts must be in spanish, with an american accent.";
     } else if ( 3 === RNS) { 
-        header.textContent = "else3";
-        body.textContent = "else3D";
+        header.textContent = "Ribbit.";
+        body.textContent = "Marcus and (P2) can only make frog noises.";
     } else if ( 4 === RNS) {
-        header.textContent = "else4";
-        body.textContent = "else4D";
+        header.textContent = "CS2 (Carl strike 2)";
+        body.textContent = "Memphy and $(P2), all have to talk in the carl weezer voice.";
     }  else if (5 === RNS) {
-        header.textContent = "else5";
-        body.textContent = "else5D";
+        header.textContent = "PICHU, DOWN";
+        body.textContent = "Arriry must attempt to stop $(P5) from jumping out of the nearest window. If Arriry fails, during the next round Arriry must buy $(P5) whatever they want.";
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
