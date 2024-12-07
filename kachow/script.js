@@ -23,8 +23,12 @@ function ctstrat() {
     if (1 === RNS) {
         header.textContent = "Strat1";
         body.textContent = "Description1";
-    } else {
+    } else if ( 2 === RNS) {
         header.textContent = "else";
         body.textContent = "elseD";
+    }
+    else if ( 3 === RNS) { 
+        header.textContent = "else3";
+        body.textContent = "else3D";
     }
 }
