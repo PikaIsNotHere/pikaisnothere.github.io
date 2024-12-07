@@ -18,6 +18,8 @@ function ctstrat() {
     const header = document.querySelector(".head");
     const body = document.querySelector(".body");
     
+    let players
+    
     let RNS = Math.floor(Math.random() * 5) + 1;
 
     if (1 === RNS) {
