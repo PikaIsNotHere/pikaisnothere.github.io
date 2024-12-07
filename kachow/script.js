@@ -26,16 +26,13 @@ function ctstrat() {
     } else if ( 2 === RNS) {
         header.textContent = "else";
         body.textContent = "elseD";
-    }
-    else if ( 3 === RNS) { 
+    } else if ( 3 === RNS) { 
         header.textContent = "else3";
         body.textContent = "else3D";
-    }
-    else if ( 4 === RNS) {
+    } else if ( 4 === RNS) {
         header.textContent = "else4";
         body.textContent = "else4D";
-    }
-    else if (5 === RNS) {
+    }  else if (5 === RNS) {
         header.textContent = "else5";
         body.textContent = "else5D";
     }
