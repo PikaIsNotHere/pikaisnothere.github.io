@@ -1,11 +1,5 @@
 var RN = Math.floor(Math.random() * 5) + 1;
 
-var W;
-var M;
-var A;
-var Al;
-var P5;
-
 function tstrat() {
     const header = document.querySelector(".head");
     const body = document.querySelector(".body");
@@ -18,7 +12,7 @@ function ctstrat() {
     const header = document.querySelector(".head");
     const body = document.querySelector(".body");
     
-    let players
+    let players = [Ar, Al, W, M, B]
     
     let RNS = Math.floor(Math.random() * 5) + 1;
 
@@ -30,13 +24,13 @@ function ctstrat() {
         body.textContent = "All callouts must be in spanish, with an american accent.";
     } else if ( 3 === RNS) { 
         header.textContent = "Ribbit.";
-        body.textContent = "Marcus and (P2) can only make frog noises.";
+        body.textContent = "Marcus and ${P2} can only make frog noises.";
     } else if ( 4 === RNS) {
         header.textContent = "CS2 (Carl strike 2)";
-        body.textContent = "Memphy and $(P2), all have to talk in the carl weezer voice.";
+        body.textContent = "Memphy and ${P2}, all have to talk in the carl weezer voice.";
     }  else if (5 === RNS) {
         header.textContent = "PICHU, DOWN";
-        body.textContent = "Arriry must attempt to stop $(P5) from jumping out of the nearest window. If Arriry fails, during the next round Arriry must buy $(P5) whatever they want.";
+        body.textContent = "Arriry must attempt to stop ${P5} from jumping out of the nearest window. If Arriry fails, during the next round Arriry must buy $(P5) whatever they want.";
     }
 }
 
