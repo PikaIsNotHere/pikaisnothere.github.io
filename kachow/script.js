@@ -1,7 +1,5 @@
 var RN = Math.floor(Math.random() * 5) + 1;
 
-var RNS = Math.floor(Math.random() * 5) + 1;
-
 var W;
 var M;
 var A;
@@ -19,9 +17,8 @@ function tstrat() {
 function ctstrat() {
     const header = document.querySelector(".head");
     const body = document.querySelector(".body");
-    console.log(RN);
-    header.textContent = "Test";
-    body.textContent = "anotha test";
+    
+    let RNS = Math.floor(Math.random() * 5) + 1;
 
     if (1 === RNS) {
         header.textContent = "Strat1";
