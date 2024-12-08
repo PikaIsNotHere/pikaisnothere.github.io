@@ -27,8 +27,6 @@ function ctstrat() {
     console.log(P5);
     
     let RNS = Math.floor(Math.random() * 6) + 1;
-    
-    console.log(
 
     if (1 === RNS) {
         header.textContent = "Make me a sandwich woman!";
