@@ -53,6 +53,7 @@ function ctstrat() {
         alert("erm, guys! something bad happened...");
         header.textContent = "Ruh Roh. Something bad happened!";
         body.textContent = "Something failed! Please check the console logs for more details!";
+    }
 }
 
 
