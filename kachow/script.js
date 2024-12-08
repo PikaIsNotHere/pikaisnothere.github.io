@@ -38,8 +38,6 @@ function ctstrat() {
         header.textContent = "PICHU, DOWN";
         body.textContent = "Arriry must attempt to stop ${P5} from jumping out of the nearest window. If Arriry fails, during the next round Arriry must buy $(P5) whatever they want.";
     }
-    
-    players.sort(() => Math.random() - 0.5);
 }
 
 
