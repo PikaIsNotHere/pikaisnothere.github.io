@@ -49,7 +49,7 @@ function ctstrat() {
             break;
         case 6:
             header.textContent = "PICHU, DOWN";
-            body.textContent = "Arriry must attempt to stop " + P5 + " from jumping out of the nearest window. If Arriry fails, during the next round Arriry must buy ${P5} whatever they want.";
+            body.textContent = "Arriry must attempt to stop " + P5 + " from jumping out of the nearest window. If Arriry fails, during the next round Arriry must buy " + P5 + " whatever they want.";
             break;
         case 7:
             header.textContent = "Is that Sam?";
@@ -99,7 +99,7 @@ function ctstrat() {
             break;
         case 18:
             header.textContent = "I dont think dad's coming home with the milk...";
-            body.textContent = "Dad, aka " + P5 + "buys a gun of their choice while the others sit in spawn. Dad has to go out, get a kill, and come back alive. Only then can others continue moving. If dad doesnt come back with the milk, well, then you guys cant exactly move. You need the milk to grow big and strong!";
+            body.textContent = "Dad, aka " + P5 + " buys a gun of their choice while the others sit in spawn. Dad has to go out, get a kill, and come back alive. Only then can others continue moving. If dad doesnt come back with the milk, well, then you guys cant exactly move. You need the milk to grow big and strong!";
             // css change
             break;
         case 19:
