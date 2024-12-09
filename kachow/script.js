@@ -149,4 +149,10 @@ function ctstrat() {
             header.textContent = "Ruh Roh. Something bad happened!";
             body.textContent = "Something failed! Please check the console logs for more details!";
     }
+
+    if (header.textContent === "Kachowwww") {
+        document.body.style.backgroundImage = "url('kachow.png')";
+    } else {
+        document.body.style.backgroundImage = "";
+    }
 }
