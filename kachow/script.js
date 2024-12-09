@@ -12,11 +12,11 @@ function ctstrat() {
     const header = document.querySelector(".head");
     const body = document.querySelector(".body");
 
-    const Ar = 'Ar';
-    const Al = 'Al';
-    const W = 'W';
-    const M = 'M';
-    const B = 'B';
+    const Ar = 'Arriry';
+    const Al = 'Alex';
+    const W = 'Warkee';
+    const M = 'Memphy';
+    const B = 'Brendon';
         
     let players = [Ar, Al, W, M, B];
 
@@ -28,11 +28,11 @@ function ctstrat() {
     let P4 = players[3];
     let P5 = players[4];
 
-    console.log(P1);
-    console.log(P2);
-    console.log(P3);
-    console.log(P4);
-    console.log(P5);
+    // console.log(P1);
+    // console.log(P2);
+    // console.log(P3);
+    // console.log(P4);
+    // console.log(P5);
     
     let RNS = Math.floor(Math.random() * 10) + 1;
 
@@ -50,7 +50,7 @@ function ctstrat() {
         body.textContent = "Memphy and " + P2 + " all have to talk in the carl weezer voice.";
     }  else if (5 === RNS) {
         header.textContent = "PICHU, DOWN";
-        body.textContent = "Arriry must attempt to stop" + P5 + "from jumping out of the nearest window. If Arriry fails, during the next round Arriry must buy ${P5} whatever they want.";
+        body.textContent = "Arriry must attempt to stop " + P5 + " from jumping out of the nearest window. If Arriry fails, during the next round Arriry must buy ${P5} whatever they want.";
     } else if (6 === RNS) {
         header.textContent = "Is that Sam?";
         body.textContent = "All players must crouch jump around and honk at each other.";
