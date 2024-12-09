@@ -12,6 +12,22 @@ function ctstrat() {
     const header = document.querySelector(".head");
     const body = document.querySelector(".body");
         
+    let players = [Ar, Al, W, M, B];
+
+    players.sort(() => Math.random() - 0.5);
+
+    let P1 = players[0];
+    let P2 = players[1];
+    let P3 = players[2];
+    let P4 = players[3];
+    let P5 = players[4];
+
+    console.log(P1);
+    console.log(P2);
+    console.log(P3);
+    console.log(P4);
+    console.log(P5);
+    
     let RNS = Math.floor(Math.random() * 10) + 1;
 
     if (1 === RNS) {
@@ -60,12 +76,6 @@ function ctstrat() {
 
 
 
-//   let players = [Ar, Al, W, M, B];
-    
-//    let P1 = players[0];
-//    let P2 = players[1];
-//    let P3 = players[2];
- //   let P4 = players[3];
- //   let P5 = players[4];
+
 
 
