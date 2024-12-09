@@ -70,7 +70,7 @@ function ctstrat() {
             break;
         case 11:
             header.textContent = "Put the fork down fatass.";
-            body.textContent = P2 + " is the fatass. They are too busy eating with their dominant hand, so they have to play one handed with their non dominant hand. Their weight is so large it carries over from irl into in game. They are forced to be crouched as much as possible." + P2 " is so fat, players can't be within 2 feet otherwise they are stepping on " P2 "'s fat.";
+            body.textContent = P2 + " is the fatass. They are too busy eating with their dominant hand, so they have to play one handed with their non dominant hand. Their weight is so large it carries over from irl into in game. They are forced to be crouched as much as possible." + P2 + " is so fat, players can't be within 2 feet otherwise they are stepping on " + P2 + "'s fat.";
             // css change
             break;
         case 12: 
@@ -104,7 +104,7 @@ function ctstrat() {
             break;
         case 19:
             header.textContent = "Liars Bar 2.0";
-            body.textContent = P2 + " sets their crosshair to head level and vertical sensitivity to 0. All other playrs get as close as possible to" + P2 + "and stand around them in a circle formation. " P2 + " then closes their eyes, and spins around for a random amount of time. When they stop, they spray their gun. ";
+            body.textContent = P2 + " sets their crosshair to head level and vertical sensitivity to 0. All other playrs get as close as possible to" + P2 + "and stand around them in a circle formation. " + P2 + " then closes their eyes, and spins around for a random amount of time. When they stop, they spray their gun. ";
             break;
         case 20:
             header.textContent = "200? Full boxed? Pieced?";
