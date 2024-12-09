@@ -79,11 +79,13 @@ function switchCase() {
     let RNS = Math.floor(Math.random() * 2) + 1;
 
     switch (RNS) {
-        case 1: 
+        case '1': 
             header.textContent = "case1";
             body.textContent = "bcase1";
-        case 2:
+            break;
+        case '2':
             header.textContent = "case2";
             body.textContent = "bcase2";
+            break;
     }
 }
