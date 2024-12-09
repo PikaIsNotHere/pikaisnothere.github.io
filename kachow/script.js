@@ -44,13 +44,13 @@ function ctstrat() {
         body.textContent = "All callouts must be in spanish, with an american accent.";
     } else if (3 === RNS) { 
         header.textContent = "Ribbit.";
-        body.textContent = "Marcus and Alex can only make frog noises.";
+        body.textContent = "Marcus and " + ${P1} + " can only make frog noises.";
     } else if (4 === RNS) {
         header.textContent = "CS2 (Carl strike 2)";
-        body.textContent = "Memphy and Arriry all have to talk in the carl weezer voice.";
+        body.textContent = "Memphy and " + ${P2} + " all have to talk in the carl weezer voice.";
     }  else if (5 === RNS) {
         header.textContent = "PICHU, DOWN";
-        body.textContent = "Arriry must attempt to stop ${P5} from jumping out of the nearest window. If Arriry fails, during the next round Arriry must buy ${P5} whatever they want.";
+        body.textContent = "Arriry must attempt to stop" + ${P5} + "from jumping out of the nearest window. If Arriry fails, during the next round Arriry must buy ${P5} whatever they want.";
     } else if (6 === RNS) {
         header.textContent = "Is that Sam?";
         body.textContent = "All players must crouch jump around and honk at each other.";
@@ -61,7 +61,7 @@ function ctstrat() {
         header.textContent = "Is that Sam?";
         body.textContent = "All players must crouch jump around and honk at each other.";
     } else if (9 === RNS) {
-        header.textContent = "Pow Pow Pow";
+        header.textContent = "Pew Pew Pew";
         body.textContent = "When you shoot, you have to imitate the sound of your gun.";
     } else if (10 === RNS) {
         header.textContent = "Live on twitch btw";
