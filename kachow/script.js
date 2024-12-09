@@ -154,5 +154,6 @@ function ctstrat() {
         document.body.style.backgroundImage = "url('/public/kachow.png')";
     } else {
         document.body.style.backgroundImage = "";
+        document.body.style.backgroundSize = "cover";
     }
 }
