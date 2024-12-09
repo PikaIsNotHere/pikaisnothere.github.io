@@ -49,7 +49,7 @@ function ctstrat() {
     } else if (9 === RNS) {
         header.textContent = "Pow Pow Pow";
         body.textContent = "When you shoot, you have to imitate the sound of your gun.";
-    } else if (10 === rns) {
+    } else if (10 === RNS) {
         header.textContent = "Live on twitch btw";
         body.textContent = "Anyone whos live on twitch has to drop the ttv with Live on twitch btw.";
     } else {
