@@ -4,7 +4,7 @@ function ctstrat() {
 
     const Ar = 'Arriry';
     const Al = 'Alex';
-    const W = 'Warkee';
+    const W = 'Marcus';
     const M = 'Memphy';
     const B = 'Brendon';
         
