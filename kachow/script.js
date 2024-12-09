@@ -83,7 +83,7 @@ function switchCase() {
             header.textContent = "case1";
             body.textContent = "bcase1";
             break;
-        case w2:
+        case 2:
             header.textContent = "case2";
             body.textContent = "bcase2";
             break;
