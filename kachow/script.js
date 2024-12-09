@@ -74,6 +74,8 @@ function ctstrat() {
 }
 
 function switchCase() {
+    const header = document.querySelector(".head");
+    const body = document.querySelector(".body");
     let RNS = Math.floor(Math.random() * 2) + 1;
 
     switch (RNS) {
