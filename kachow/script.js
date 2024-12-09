@@ -151,7 +151,7 @@ function ctstrat() {
     }
 
     if (header.textContent === "Kachowwww") {
-        document.body.style.backgroundImage = "url('kachow.png')";
+        document.body.style.backgroundImage = "url('/public/kachow.png')";
     } else {
         document.body.style.backgroundImage = "";
     }
