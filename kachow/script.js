@@ -40,8 +40,8 @@ function ctstrat() {
         header.textContent = "Make me a sandwich woman!";
         body.textContent = "All women must stop playing, go to the kitchen, make a sandwich, show it to stream. You may not continue playing until you have showed it to stream.";
     } else if (2 === RNS) {
-        header.textContent = "37%";
-        body.textContent = "All callouts must be in spanish, with an american accent.";
+        header.textContent = "My code, My rules";
+        body.textContent = "Every sentence must end with saying something nice about Pika.";
     } else if (3 === RNS) { 
         header.textContent = "Ribbit.";
         body.textContent = "Marcus and " + P1 + " can only make frog noises.";
@@ -73,15 +73,15 @@ function ctstrat() {
     }
 }
 
+function switchCase() {
+    let RNS = Math.floor(Math.random() * 2) + 1;
 
-
-//  } else if (6 === RNS) {
-      //  header.textContent = "Is that Sam?";
-       // body.textContent = "All players must crouch jump around and honk at each other."
-    // } else if (7 === RNS) {
-
-
-
-
-
-
+    switch (RNS) {
+        case 1: 
+            header.textContent = "case1";
+            body.textContent = "bcase1";
+        case 2:
+            header.textContent = "case2";
+            body.textContent = "bcase2";
+    }
+}
