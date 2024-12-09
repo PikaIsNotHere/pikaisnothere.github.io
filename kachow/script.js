@@ -11,6 +11,12 @@ function tstrat() {
 function ctstrat() {
     const header = document.querySelector(".head");
     const body = document.querySelector(".body");
+
+    const Ar = 'Ar';
+    const Al = 'Al';
+    const W = 'W';
+    const M = 'M';
+    const B = 'B';
         
     let players = [Ar, Al, W, M, B];
 
