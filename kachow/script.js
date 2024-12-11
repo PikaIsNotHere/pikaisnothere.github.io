@@ -24,8 +24,10 @@ function ctstrat() {
     // console.log(P4);
     // console.log(P5);
 
-    let RNS = Math.floor(Math.random() * 28) + 1;
+    let RNS = Math.floor(Math.random() * 28);
 
+    console.log(RNS);
+    
     switch (RNS) {
         case 1: 
             header.textContent = "Make me a sandwich woman!";
