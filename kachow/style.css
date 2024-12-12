@@ -8,9 +8,6 @@ body {
     font-family: "Geist Mono", monospace;
 }
 
-.main {
-	animation: swingIn 2s ease 5s 1 normal forwards;
-}
 header {
     color: white;
     text-align: center;
