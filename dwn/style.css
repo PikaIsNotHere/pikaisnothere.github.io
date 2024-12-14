@@ -1,0 +1,238 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Container to center the content */
+.container {
+    text-align: center;
+    animation: fadeIn 1s ease-in-out 0.5s;
+    position: relative;
+}
+
+/* Styling for the header */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out 1s forwards;
+}
+
+/* Timer styling */
+#timer {
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    animation: fadeIn 1.5s ease-out 1.5s forwards;
+}
+
+/* Style for each time unit */
+span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 2s forwards;
+    transition: transform 0.2s ease, background 0.3s ease;  /* Added transition for transform */
+}
+
+/* Hover effect for each time unit */
+span:hover {
+    transform: scale(1.2);  /* Slightly larger scale */
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Animations for smooth transitions */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Settings gear button */
+.settings-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    padding: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Modal styling with fade-in and slide-up animation */
+.settings-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-50px); /* Initial position off-screen */
+    transition: opacity 1s ease, transform 1s ease; /* Transition for opening and closing */
+}
+
+/* Show the modal with fade-in and slide-up */
+.settings-modal.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0); /* Move into position */
+}
+
+/* Settings Modal Content */
+.settings-modal-content {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+    color: white;
+    position: relative;
+}
+
+/* Close Button inside the settings modal (top-right) */
+.close-btn {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Credits button inside the modal */
+#creditsButton {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#creditsButton:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsiveness for smaller screens */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    #timer {
+        font-size: 2rem;
+    }
+    span {
+        padding: 8px 16px;
+    }
+}
+
+/* Styling when weeks are disabled (making the layout look even) */
+#timer {
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    animation: fadeIn 1.5s ease-out 1.5s forwards;
+}
+
+#days {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+#timer span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 2s forwards;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+#timer span:hover {
+    transform: scale(1.2); /* Slightly larger scale */
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Add smooth transition for visual appearance */
+#weeks {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;  /* Smooth fade-in */
+}
+
+#timer span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
