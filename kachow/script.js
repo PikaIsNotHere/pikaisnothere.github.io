@@ -24,7 +24,7 @@ function ctstrat() {
     // console.log(P4);
     // console.log(P5);
 
-    let RNS = Math.floor(Math.random() * 28);
+    let RNS = Math.floor(Math.random() * 40);
 
     console.log(RNS);
     
@@ -143,6 +143,54 @@ function ctstrat() {
             // add css change
             break;
         case 28:
+            header.textContent = "Smokey Girl";
+            body.textContent = "Everyone must buy a negev, and as many smokes as possible. You must throw them everywhere and spray with the negev.";
+            break;
+        case 29:
+            header.textContent = "Narrator: Narrarates all.";
+            body.textContent = P2 + " is the narrator. They must Narrate everything they see.";
+            break;
+        case 30:
+            header.textContent = "Guys? What the fuck?";
+            body.textContent = "Everyone goes AFK while Alex has to clutch the round.";
+            break;
+         case 31:
+            header.textContent = "Oh shit. Wrong game.";
+            body.textContent = "You may only use guns from fortnite. Scar, XM1014, P90, etc.";
+            break;
+         case 32:
+            header.textContent = "Zero noise. Stay low.";
+            body.textContent = "Make no noise. Silenced Weapons only. Do not get compromsied.";
+            break;
+         case 33:
+            header.textContent = "A different type of stealth.";
+            body.textContent = "Leave no survivors. If you fail to do this, reverse reverse for everyone next round.";
+            break;
+         case 34:
+            header.textContent = "Emperor Palpatine;
+            body.textContent = "Zeus.";
+            break;
+         case 35:
+            header.textContent = "";
+            body.textContent = "";
+            break;
+         case 36:
+            header.textContent = "Smokey Girl";
+            body.textContent = "Everyone must buy a negev, and as many smokes as possible. You must throw them everywhere and spray with the negev.";
+            break;
+         case 37:
+            header.textContent = "Smokey Girl";
+            body.textContent = "Everyone must buy a negev, and as many smokes as possible. You must throw them everywhere and spray with the negev.";
+            break;
+         case 38:
+            header.textContent = "Smokey Girl";
+            body.textContent = "Everyone must buy a negev, and as many smokes as possible. You must throw them everywhere and spray with the negev.";
+            break;
+         case 39:
+            header.textContent = "Smokey Girl";
+            body.textContent = "Everyone must buy a negev, and as many smokes as possible. You must throw them everywhere and spray with the negev.";
+            break;
+         case 40:
             header.textContent = "Smokey Girl";
             body.textContent = "Everyone must buy a negev, and as many smokes as possible. You must throw them everywhere and spray with the negev.";
             break;
