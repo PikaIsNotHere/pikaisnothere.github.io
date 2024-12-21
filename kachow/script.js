@@ -60,7 +60,6 @@ function ctstrat() {
         case 8:
             header.textContent = "Kachowwww";
             body.textContent = "Kachow all sentences must start and end in kachow kachow";
-            // css change
             break;
         case 9:
             header.textContent = "Live on twitch btw";
@@ -72,8 +71,7 @@ function ctstrat() {
             break;
         case 11:
             header.textContent = "Put the fork down fatass.";
-            body.textContent = P2 + " is the fatass. They are too busy eating with their dominant hand, so they have to play one handed with their non dominant hand. Their weight is so large it carries over from irl into in game. They are forced to be crouched as much as possible." + P2 + " is so fat, players can't be within 2 feet otherwise they are stepping on " + P2 + "'s fat.";
-            // css change
+            body.textContent = P2 + " is the fatass. They are too busy eating with their dominant hand, so they have to play one handed with their non dominant hand.";
             break;
         case 12: 
             header.textContent = "Survival of the fittest.";
@@ -156,7 +154,7 @@ function ctstrat() {
             break;
          case 31:
             header.textContent = "Oh shit. Wrong game.";
-            body.textContent = "You may only use guns from fortnite. Scar, XM1014, P90, etc.";
+            body.textContent = "You may only use guns / abilities that are in valorant.";
             break;
          case 32:
             header.textContent = "Zero noise. Stay low.";
@@ -171,12 +169,12 @@ function ctstrat() {
             body.textContent = "Zeus.";
             break;
          case 35:
-            header.textContent = "";
-            body.textContent = "";
+            header.textContent = "Peace, and quiet.";
+            body.textContent = "Take a break from the stress. No talking, just relax and enjoy the silence :)";
             break;
          case 36:
-            header.textContent = "Smokey Girl";
-            body.textContent = "Everyone must buy a negev, and as many smokes as possible. You must throw them everywhere and spray with the negev.";
+            header.textContent = "Bouta Slide on the opps fr fr";
+            body.textContent = "Travel in a closely packed group of 5. After getting a single kill, rotate away and repeat.";
             break;
          case 37:
             header.textContent = "Smokey Girl";
@@ -194,10 +192,6 @@ function ctstrat() {
             header.textContent = "Smokey Girl";
             body.textContent = "Everyone must buy a negev, and as many smokes as possible. You must throw them everywhere and spray with the negev.";
             break;
-        default: 
-            alert("erm, guys! something bad happened...");
-            header.textContent = "Ruh Roh. Something bad happened!";
-            body.textContent = "Something failed! Please check the console logs for more details!";
     }
 
     if (header.textContent === "Kachowwww") {
