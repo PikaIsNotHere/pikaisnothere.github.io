@@ -66,8 +66,8 @@ function ctstrat() {
             body.textContent = "Anyone whos live on twitch has to drop the ttv with Live on twitch btw.";
             break;
         case 10:
-            header.textContent = "Clover? Is that you?";
-            body.textContent = "All words that start with N must be close calls.";
+            header.textContent = "Hot potato";
+            body.textContent = "One gun of your choice. The group must pass around the single gun. You may only take one shot before passing it to someone else.";
             break;
         case 11:
             header.textContent = "Put the fork down fatass.";
