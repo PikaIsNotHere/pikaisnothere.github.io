@@ -152,45 +152,45 @@ function ctstrat() {
             header.textContent = "Guys? What the fuck?";
             body.textContent = "Everyone goes AFK while Alex has to clutch the round.";
             break;
-         case 31:
+        case 31:
             header.textContent = "Oh shit. Wrong game.";
             body.textContent = "You may only use guns / abilities that are in valorant.";
             break;
-         case 32:
+        case 32:
             header.textContent = "Zero noise. Stay low.";
             body.textContent = "Make no noise. Silenced Weapons only. Do not get compromsied.";
             break;
-         case 33:
+        case 33:
             header.textContent = "A different type of stealth.";
             body.textContent = "Leave no survivors. If you fail to do this, reverse reverse for everyone next round.";
             break;
-         case 34:
-            header.textContent = "Emperor Palpatine;
+        case 34:
+            header.textContent = "Emperor Palpatine";
             body.textContent = "Zeus.";
             break;
-         case 35:
+        case 35:
             header.textContent = "Peace, and quiet.";
             body.textContent = "Take a break from the stress. No talking, just relax and enjoy the silence :)";
             break;
-         case 36:
+        case 36:
             header.textContent = "Bouta Slide on the opps fr fr";
             body.textContent = "Travel in a closely packed group of 5. After getting a single kill, rotate away and repeat.";
             break;
-         case 37:
-            header.textContent = "Smokey Girl";
-            body.textContent = "Everyone must buy a negev, and as many smokes as possible. You must throw them everywhere and spray with the negev.";
+        case 37:
+            header.textContent = "Ok fatty";
+            body.textContent = P1 + "can only talk with food in their mouth";
             break;
-         case 38:
-            header.textContent = "Smokey Girl";
-            body.textContent = "Everyone must buy a negev, and as many smokes as possible. You must throw them everywhere and spray with the negev.";
+        case 38:
+            header.textContent = "Boing";
+            body.textContent = "Everyone must be jumping while shooting, as if they were a frog.";
             break;
-         case 39:
-            header.textContent = "Smokey Girl";
-            body.textContent = "Everyone must buy a negev, and as many smokes as possible. You must throw them everywhere and spray with the negev.";
+        case 39:
+            header.textContent = "6 Pack of beer";
+            body.textContent = "Everyone was at a party and drank a 6 pack. You are starting to feel really drunk... turn your keyboard upsidown.";
             break;
-         case 40:
-            header.textContent = "Smokey Girl";
-            body.textContent = "Everyone must buy a negev, and as many smokes as possible. You must throw them everywhere and spray with the negev.";
+        case 40:
+            header.textContent = "Aww im sorry to hear about your brother he gets 5 BIG BOOMS ";
+            body.textContent = "After every kill, give the enemy 2 BIG BOOMS";
             break;
     }
 
@@ -199,5 +199,12 @@ function ctstrat() {
     } else {
         document.body.style.backgroundImage = "";
         document.body.style.backgroundSize = "cover";
+    }
+
+    if (header.textContent === "Aww im sorry to hear about your brother he gets 5 BIG BOOMS") {
+        document.body.style.backgroundImage = "url('/public/5BIGBOOMS.png')";
+    } else {
+        document.body.style.backgroundImage = "";
+        document.body.style.backgroundImage = "cover";
     }
 }
