@@ -1,3 +1,6 @@
+const Fifth window.prompt("Who is the Fifth?")
+
+
 function ctstrat() {
     const header = document.querySelector(".head");
     const body = document.querySelector(".body");
@@ -6,9 +9,8 @@ function ctstrat() {
     const Al = 'Alex';
     const W = 'Marcus';
     const M = 'Memphy';
-    const B = 'Brendon';
         
-    let players = [Ar, Al, W, M, B];
+    let players = [Ar, Al, W, M, Fifth];
 
     players.sort(() => Math.random() - 0.5);
 
