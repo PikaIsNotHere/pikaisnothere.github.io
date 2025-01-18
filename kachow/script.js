@@ -1,4 +1,4 @@
-const Fifth window.prompt("Who is the Fifth?")
+const Fifth prompt("Who is the Fifth?");
 
 
 function ctstrat() {
@@ -27,7 +27,7 @@ function ctstrat() {
     // console.log(P5);
 
     let RNS = Math.floor(Math.random() * 40);
-
+    let RNSP = Math.floor(Math.random() * 1000);
     console.log(RNS);
     
     switch (RNS) {
@@ -102,11 +102,10 @@ function ctstrat() {
         case 18:
             header.textContent = "I dont think dad's coming home with the milk...";
             body.textContent = "Dad, aka " + P5 + " buys a gun of their choice while the others sit in spawn. Dad has to go out, get a kill, and come back alive. Only then can others continue moving. If dad doesnt come back with the milk, well, then you guys cant exactly move. You need the milk to grow big and strong!";
-            // css change
             break;
         case 19:
-            header.textContent = "Liars Bar 2.0";
-            body.textContent = P2 + " sets their crosshair to head level and vertical sensitivity to 0. All other playrs get as close as possible to" + P2 + "and stand around them in a circle formation. " + P2 + " then closes their eyes, and spins around for a random amount of time. When they stop, they spray their gun. ";
+            header.textContent = "Tag, you're it.";
+            body.textContent = "The Bomb is the tag. If you are CT, use a grenade. You do not want to have the bomb at the end of the round, otherwise, waste all your money on dumb stuff.";
             break;
         case 20:
             header.textContent = "200? Full boxed? Pieced?";
@@ -118,7 +117,7 @@ function ctstrat() {
             break;
         case 22:
             header.textContent = "No balls.";
-            body.textContent = P1 + " has to roll a crate of their choice mid match, right now.";
+            body.textContent = "Someone has to roll a crate of their choice mid match, right now.";
             break;
         case 23:
             header.textContent = "Two straight men.";
@@ -126,7 +125,7 @@ function ctstrat() {
             break;
         case 24:
             header.textContent = "Mr Brendiscent";
-            body.textContent = P5 + " is Mr. President. You must tream them as such.";
+            body.textContent = Fifth + " is Mr. President. You must treat them as such.";
             break;
         case 25:
             header.textContent = "5 bullets and a dream.";
@@ -135,12 +134,10 @@ function ctstrat() {
         case 26:
             header.textContent = "Careful spongebob.";
             body.textContent = "CAREFUL SPONGEBOB!!!";
-            // add css change
             break;
         case 27:
             header.textContent = "Is this the Crusty Crab? Uh no, this is Patrick.";
             body.textContent = "Everyone must talk in SpongeBob quotes.";
-            // add css change
             break;
         case 28:
             header.textContent = "Smokey Girl";
@@ -156,7 +153,7 @@ function ctstrat() {
             break;
         case 31:
             header.textContent = "Oh shit. Wrong game.";
-            body.textContent = "You may only use guns / abilities that are in valorant.";
+            body.textContent = "You may only use guns / abilities that are in valorant. Ex: Flashbang, Smoke, etc.";
             break;
         case 32:
             header.textContent = "Zero noise. Stay low.";
@@ -194,6 +191,48 @@ function ctstrat() {
             header.textContent = "Aww im sorry to hear about your brother he gets 5 BIG BOOMS ";
             body.textContent = "After every kill, give the enemy 2 BIG BOOMS";
             break;
+        case 41:
+            header.textContent = "LOOOWWWWW TAPEERRRR FADEEEEE";
+            body.textContent = P3 + " has to sit in spawn giving " + P4 + " a LOWWW TAPPEERRRR FADEEE (inspect your knife on their hair) Once they are finished with the low taper fade, continue playing. (low taper fade finished whenever barber decides but dont be lame)";
+            break;
+        case 42:
+            header.textContent = "Since when are you an author?";
+            body.textContent = P2 + "Is the author. Everyone else can only do things that the author said they did. The author commands everyone to do everything.";
+            break;
+        case 43:
+            header.textContent = "Mom I fwew up";
+            body.textContent = "After every kill, you fwow up. Throw your gun after every kill, wait a second, pick it back up.";
+            break;
+        case 44:
+            header.textContent = "Arriry fucking smells";
+            body.textContent = "Everyone avoids Arriry at all costs.";
+            break;
+        case 45:
+            header.textContent = "ZOOM";
+            body.textContent = "Sensitivity set to max.";
+            break;
+        case 46:
+            header.textContent = "What the fuck are you doing?";
+            body.textContent = "Stand on the chair and play.";
+            break;
+        case 47:
+            header.textContent = "360 No Scope";
+            body.textContent = "Ask in all chat for a 360 no scope fight. No matter what they say, everyone buys snipers and only goes for 360 no scopes.";
+            break;
+        case 48:
+            header.textContent = "The cake is a lie";
+            body.textContent = "Anyone that has had cake within the past month, or ice cream within the past week, may not shoot.";
+            break;
+        case 49:
+            header.textContent = "No senator, I'm singaporean";
+            body.textContent = "Each player must ask the enemy team if they are part of the CCP, or something related to it. After a kill, talk about banning tiktok.";
+            break;
+        case 50:
+            header.textContent = "What is this, Duckduk's game?";
+            body.textContent = "You can only shoot while adsed ";
+            break;
+        
+        
     }
 
     if (header.textContent === "Kachowwww") {
@@ -204,7 +243,37 @@ function ctstrat() {
     }
 
     if (header.textContent === "Aww im sorry to hear about your brother he gets 5 BIG BOOMS") {
+        document.body.style.backgroundImage = "url('/public/spongebob.png')";
+    } else {
+        document.body.style.backgroundImage = "";
+        document.body.style.backgroundImage = "cover";
+    }
+
+    if (header.textContent === "Is this the Crusty Crab? Uh no, this is Patrick") {
+        document.body.style.backgroundImage = "url('/public/patrick.png')";
+    } else {
+        document.body.style.backgroundImage = "";
+        document.body.style.backgroundImage = "cover";
+    }
+
+    if (header.textContent === "Careful spongebob.") {
         document.body.style.backgroundImage = "url('/public/5BIGBOOMS.png')";
+    } else {
+        document.body.style.backgroundImage = "";
+        document.body.style.backgroundImage = "cover";
+    }
+
+    if (header.textContent === "Oh shit. Wrong game.") {
+        document.body.style.backgroundImage = "url('/public/val.png')";
+    } else {
+        document.body.style.backgroundImage = "";
+        document.body.style.backgroundImage = "cover";
+    }
+
+    if (RNSP === 69) {
+        header.textContent = "LUCKY FROG";
+        body.textContent = "YOU GOT THE LUCKY FROG, DM PIKA PROOF TO REDEEM YOUR REWARD :D";
+        document.body.style.backgroundImage = "url('/public/luckyfrog.png')";
     } else {
         document.body.style.backgroundImage = "";
         document.body.style.backgroundImage = "cover";
