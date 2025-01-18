@@ -243,17 +243,6 @@ function ctstrat() {
         "Oh shit. Wrong game.": "/public/val.png"
     };
 
-    const bgImage = backgroundImages[header.textContent];
-    if (bgImage) {
-        document.body.style.backgroundImage = `url('${bgImage}')`;
-        document.body.style.backgroundSize = "cover"; // Ensure it fully covers the screen
-        document.body.style.backgroundRepeat = "no-repeat"; // Avoid tiling the image
-        document.body.style.backgroundPosition = "center center"; // Center the image
-    } else {
-        document.body.style.backgroundImage = ""; // Reset background image if no match
-    }
-    
-
     if (RNSP === 69) {
         header.textContent = "LUCKY FROG";
         body.textContent = "YOU GOT THE LUCKY FROG, DM PIKA PROOF TO REDEEM YOUR REWARD :D";
