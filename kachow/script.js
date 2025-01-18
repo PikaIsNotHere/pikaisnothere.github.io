@@ -1,4 +1,4 @@
-const Fifth prompt("Who is the Fifth?");
+const Fifth = prompt("Who is the Fifth?");
 
 
 function ctstrat() {
