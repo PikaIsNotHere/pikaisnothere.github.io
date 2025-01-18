@@ -26,7 +26,7 @@ function ctstrat() {
     // console.log(P4);
     // console.log(P5);
 
-    let RNS = Math.floor(Math.random() * 40);
+    let RNS = Math.floor(Math.random() * 50) + 1;
     let RNSP = Math.floor(Math.random() * 1000);
     console.log(RNS);
     
@@ -243,16 +243,13 @@ function ctstrat() {
         "Oh shit. Wrong game.": "/public/val.png"
     };
 
-    const bgImage = backgroundImages[header.textContent];
-    document.body.style.backgroundImage = bgImage ? `url('${bgImage}')` : "";
-    document.body.style.backgroundSize = "cover";
-
     if (RNSP === 69) {
         header.textContent = "LUCKY FROG";
         body.textContent = "YOU GOT THE LUCKY FROG, DM PIKA PROOF TO REDEEM YOUR REWARD :D";
         document.body.style.backgroundImage = "url('/public/luckyfrog.png')";
     } else {
-        document.body.style.backgroundImage = "";
-        document.body.style.backgroundImage = "cover";
+        const bgImage = backgroundImages[header.textContent];
+        document.body.style.backgroundImage = bgImage ? `url('${bgImage}')` : "";
     }
+    document.body.style.backgroundSize = "cover";
 }
