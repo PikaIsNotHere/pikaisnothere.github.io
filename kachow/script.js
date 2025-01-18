@@ -235,40 +235,17 @@ function ctstrat() {
         
     }
 
-    if (header.textContent === "Kachowwww") {
-        document.body.style.backgroundImage = "url('/public/kachow.png')";
-    } else {
-        document.body.style.backgroundImage = "";
-        document.body.style.backgroundSize = "cover";
-    }
+    const backgroundImages = {
+        "Kachowwww": "/public/kachow.png",
+        "Aww im sorry to hear about your brother he gets 5 BIG BOOMS": "/public/spongebob.png",
+        "Is this the Crusty Crab? Uh no, this is Patrick": "/public/patrick.png",
+        "Careful spongebob.": "/public/5BIGBOOMS.png",
+        "Oh shit. Wrong game.": "/public/val.png"
+    };
 
-    if (header.textContent === "Aww im sorry to hear about your brother he gets 5 BIG BOOMS") {
-        document.body.style.backgroundImage = "url('/public/spongebob.png')";
-    } else {
-        document.body.style.backgroundImage = "";
-        document.body.style.backgroundImage = "cover";
-    }
-
-    if (header.textContent === "Is this the Crusty Crab? Uh no, this is Patrick") {
-        document.body.style.backgroundImage = "url('/public/patrick.png')";
-    } else {
-        document.body.style.backgroundImage = "";
-        document.body.style.backgroundImage = "cover";
-    }
-
-    if (header.textContent === "Careful spongebob.") {
-        document.body.style.backgroundImage = "url('/public/5BIGBOOMS.png')";
-    } else {
-        document.body.style.backgroundImage = "";
-        document.body.style.backgroundImage = "cover";
-    }
-
-    if (header.textContent === "Oh shit. Wrong game.") {
-        document.body.style.backgroundImage = "url('/public/val.png')";
-    } else {
-        document.body.style.backgroundImage = "";
-        document.body.style.backgroundImage = "cover";
-    }
+    const bgImage = backgroundImages[header.textContent];
+    document.body.style.backgroundImage = bgImage ? `url('${bgImage}')` : "";
+    document.body.style.backgroundSize = "cover";
 
     if (RNSP === 69) {
         header.textContent = "LUCKY FROG";
