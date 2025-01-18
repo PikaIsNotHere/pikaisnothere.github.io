@@ -237,11 +237,22 @@ function ctstrat() {
 
     const backgroundImages = {
         "Kachowwww": "/public/kachow.png",
-        "Aww im sorry to hear about your brother he gets 5 BIG BOOMS": "/public/spongebob.png",
+        "Aww im sorry to hear about your brother he gets 5 BIG BOOMS": "/public/5BIGBOOMS.png",
         "Is this the Crusty Crab? Uh no, this is Patrick": "/public/patrick.png",
-        "Careful spongebob.": "/public/5BIGBOOMS.png",
+        "Careful spongebob.": "/public/spongebob.png",
         "Oh shit. Wrong game.": "/public/val.png"
     };
+
+    const bgImage = backgroundImages[header.textContent];
+    if (bgImage) {
+        document.body.style.backgroundImage = `url('${bgImage}')`;
+        document.body.style.backgroundSize = "cover"; // Ensure it fully covers the screen
+        document.body.style.backgroundRepeat = "no-repeat"; // Avoid tiling the image
+        document.body.style.backgroundPosition = "center center"; // Center the image
+    } else {
+        document.body.style.backgroundImage = ""; // Reset background image if no match
+    }
+    
 
     if (RNSP === 69) {
         header.textContent = "LUCKY FROG";
