@@ -157,7 +157,7 @@ function ctstrat() {
             break;
         case 32:
             header.textContent = "Zero noise. Stay low.";
-            body.textContent = "Make no noise. Silenced Weapons only. Do not get compromsied.";
+            body.textContent = "Make no noise. Silenced Weapons only. Do not get compromsied. (If you are on t, idk just like jork it or sum)";
             break;
         case 33:
             header.textContent = "A different type of stealth.";
@@ -221,7 +221,7 @@ function ctstrat() {
             break;
         case 48:
             header.textContent = "The cake is a lie";
-            body.textContent = "Anyone that has had cake within the past month, or ice cream within the past week, may not shoot.";
+            body.textContent = "Marcus and Memphy got some mad cake back there. Unfortunately, the cake is a lie. Marcus and Memph can only speak in lies.";
             break;
         case 49:
             header.textContent = "No senator, I'm singaporean";
