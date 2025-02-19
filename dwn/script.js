@@ -51,20 +51,27 @@ function updateTimer() {
         document.getElementById('header').textContent = "Nice.";
     }
 
+    // Add animation for timer updates
+    const timerElements = document.querySelectorAll('#timer span');
+    timerElements.forEach(element => {
+        element.classList.add('update-animation');
+        setTimeout(() => {
+            element.classList.remove('update-animation');
+        }, 500);
+    });
+
     // Update every second
     setTimeout(updateTimer, 1000);
 }
-
-
-
-
 
 // Toggle "P Mode" background
 function togglePMode() {
     if (pMode) {
         document.body.style.backgroundImage = "url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/03/elden-ring-fia-hug.jpg')";
+        document.body.style.transition = 'background-image 0.5s ease-in-out';
     } else {
         document.body.style.backgroundImage = '';
+        document.body.style.transition = 'background-image 0.5s ease-in-out';
     }
 }
 
