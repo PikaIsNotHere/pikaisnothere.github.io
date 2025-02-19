@@ -1,6 +1,5 @@
 const Fifth = prompt("Who is the Fifth?");
 
-
 function ctstrat() {
     const header = document.querySelector(".head");
     const body = document.querySelector(".body");
@@ -19,12 +18,6 @@ function ctstrat() {
     let P3 = players[2];
     let P4 = players[3];
     let P5 = players[4];
-
-    // console.log(P1);
-    // console.log(P2);
-    // console.log(P3);
-    // console.log(P4);
-    // console.log(P5);
 
     let RNS = Math.floor(Math.random() * 50) + 1;
     let RNSP = Math.floor(Math.random() * 1000);
@@ -231,8 +224,6 @@ function ctstrat() {
             header.textContent = "What is this, Duckduk's game?";
             body.textContent = "You can only shoot while adsed ";
             break;
-        
-        
     }
 
     const backgroundImages = {
@@ -252,4 +243,12 @@ function ctstrat() {
         document.body.style.backgroundImage = bgImage ? `url('${bgImage}')` : "";
     }
     document.body.style.backgroundSize = "cover";
+
+    // Add animation for strat roulette updates
+    header.classList.add('update-animation');
+    body.classList.add('update-animation');
+    setTimeout(() => {
+        header.classList.remove('update-animation');
+        body.classList.remove('update-animation');
+    }, 500);
 }
