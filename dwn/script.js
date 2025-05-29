@@ -1,10 +1,10 @@
-const trailerReleaseDate = new Date('2024-12-13T01:20:00Z');  // Trailer upload time in UTC
-let displayMode = localStorage.getItem('displayMode') || 'weeks'; // Persist mode (weeks or allDays)
-let pMode = localStorage.getItem('pMode') === 'true'; // Persist P Mode state
-
 function updateTimer() {
     const now = new Date();
-    const timeDifference = now - trailerReleaseDate;
+    const stopTime = new Date('2025-05-29T09:00:00Z'); // 5:00 AM EST = 09:00 UTC
+
+    // If current time is after stop time, freeze the timer
+    const effectiveNow = now > stopTime ? stopTime : now;
+    const timeDifference = effectiveNow - trailerReleaseDate;
 
     // Calculate the different time units
     const weeks = Math.floor(timeDifference / (1000 * 60 * 60 * 24 * 7));
@@ -16,103 +16,35 @@ function updateTimer() {
     if (displayMode === 'weeks') {
         let weeksElement = document.getElementById('weeks');
 
-        // If the weeks element doesn't exist, create it instantly
         if (!weeksElement) {
             weeksElement = document.createElement('span');
             weeksElement.id = 'weeks';
             document.getElementById('timer').insertBefore(weeksElement, document.getElementById('days'));
         }
 
-        // Add 'visible' class for the transition effect
         weeksElement.textContent = `${weeks} weeks`;
         weeksElement.classList.add('visible');
-
-        // Update the days display
         document.getElementById('days').textContent = `${days} days`;
     } else {
-        // If in "Days Only" mode, remove the weeks element
         const weeksElement = document.getElementById('weeks');
         if (weeksElement) {
             weeksElement.remove();
         }
 
-        // Update the total days display
         const totalDays = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
         document.getElementById('days').textContent = `${totalDays} days`;
     }
 
-    // Update other time units (hours, minutes, seconds)
     document.getElementById('hours').textContent = `${hours} hours`;
     document.getElementById('minutes').textContent = `${minutes} minutes`;
     document.getElementById('seconds').textContent = `${seconds} seconds`;
 
-    // Special "Nice" change after 69 days
     if (days === 69) {
         document.getElementById('header').textContent = "Nice.";
     }
 
-    // Update every second
-    setTimeout(updateTimer, 1000);
-}
-
-
-
-
-
-// Toggle "P Mode" background
-function togglePMode() {
-    if (pMode) {
-        document.body.style.backgroundImage = "url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/03/elden-ring-fia-hug.jpg')";
-    } else {
-        document.body.style.backgroundImage = '';
+    // Only keep updating if it's before the stop time
+    if (now < stopTime) {
+        setTimeout(updateTimer, 1000);
     }
 }
-
-// Show settings modal
-function showSettings() {
-    const settingsModal = document.getElementById('settingsModal');
-    settingsModal.classList.add('show'); // Show the modal
-    document.getElementById('daysOnly').checked = displayMode === 'allDays'; // Set display mode checkbox
-    document.getElementById('pMode').checked = pMode; // Set P Mode checkbox
-}
-
-// Close settings modal
-function closeSettings() {
-    const settingsModal = document.getElementById('settingsModal');
-    settingsModal.classList.remove('show'); // Hide the modal
-}
-
-// Save settings based on checkbox states
-function saveSettings() {
-    // Get the current state of checkboxes
-    displayMode = document.getElementById('daysOnly').checked ? 'allDays' : 'weeks.visable';
-    pMode = document.getElementById('pMode').checked;
-    
-    // Persist settings in localStorage
-    localStorage.setItem('displayMode', displayMode);
-    localStorage.setItem('pMode', pMode.toString());
-
-    // Apply changes based on settings
-    if (pMode) {
-        togglePMode();
-    } else {
-        togglePMode(); // Ensure P Mode is disabled if unchecked
-    }
-
-    updateTimer(); // Refresh the timer to apply new display mode
-    closeSettings(); // Close settings modal
-}
-
-// Event listeners for the checkboxes inside the settings modal
-document.getElementById('daysOnly').addEventListener('change', saveSettings);  // Save settings when Days Only checkbox changes
-document.getElementById('pMode').addEventListener('change', saveSettings);      // Save settings when P Mode checkbox changes
-
-// Event listeners for the settings modal buttons
-document.getElementById('settings').addEventListener('click', showSettings);
-document.getElementById('closeModal').addEventListener('click', closeSettings);
-document.getElementById('creditsButton').addEventListener('click', () => {
-    alert("Credits: P for P mode, & Game Rant for the image!");
-});
-
-// Initialize the timer and settings
-updateTimer();
